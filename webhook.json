@@ -1,0 +1,328 @@
+const Discord = require('discord.js')
+const client = new Discord.Client()
+
+client.on('message', (receivedMessage) => {
+    if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
+        return
+    }
+    
+    if (receivedMessage.content.startsWith(".")) {
+        processCommand(receivedMessage)
+    }
+
+})
+
+function processCommand(receivedMessage) {
+    let fullCommand = receivedMessage.content.substr(1) // Remove the leading exclamation mark
+    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after the exclamation is the command
+    let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
+
+    console.log("Command received: " + primaryCommand)
+
+    if (primaryCommand == "tardcum") {
+        tardcumCommand(receivedMessage)
+    }
+	if (primaryCommand == "fiveAM") {
+		fiveAMCommand(receivedMessage)
+	}
+	if (primaryCommand == "rss") {
+		rssCommand(receivedMessage)
+	}
+	if (primaryCommand == "stav") {
+		stavCommand(receivedMessage)
+	}
+	if (primaryCommand == "molestrios") {
+		molestriosCommand(receivedMessage)
+	}
+	else {
+    }
+}
+
+function tardcumCommand(receivedMessage) {
+	const stav = client.emojis.find(emoji => emoji.name === "stav");
+    var pick = Math.floor((Math.random() * 198) + 1);
+	switch (pick){
+			case 1: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-110-punishment-61669`); break;
+			case 2: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-109-maggets-and-terds-60933`); break;
+			case 3: receivedMessage.channel.send(`${stav}<http://shoutengine.com/CumTown/ep-108-sorry-60409`); break;
+			case 4: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-107-rubiks-tube-60072`); break;
+			case 5: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-106-will-shitz-his-pants-59706`); break;
+			case 6: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-105-writers-room-59351`); break;
+			case 7: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-104-madcucks-explained-58995`); break;
+			case 8: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-103-easily-the-worst-episode-in-awhile-58610`); break;
+			case 9: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-102-still-mad-abotu-you-58182`); break;
+			case 10: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-101-fuck-shoutengine-57753`); break;
+			case 11: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-99-comb-town-56778`); break;
+			case 12: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-98-adams-birthday-56262`); break;
+			case 13: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-97-another-delay-55864`); break;
+			case 14: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-96-dan-schneider-goes-down-55336`); break;
+			case 15: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-95-ideal-podcast-hours-54976`); break;
+			case 16: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-94-museum-boys-54633`); break;
+			case 17: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-93-look-whos-talking-54220`); break;
+			case 18: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-92-ruthless-and-toothless-53841`); break;
+			case 19: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-91-cum-town-classic-53480`); break;
+			case 20: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-90-bug-audio-53114`); break;
+			case 21: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-89-tai-bo-51187`); break;
+			case 22: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-88-finally-real-boys-50718`); break;
+			case 23: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-87-podcasting-gear-from-marshalls-50245`); break;
+			case 24: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-86-go-back-to-africa-49813`); break;
+			case 25: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-85-fucking-piece-of-shit-computer-49455`); break;
+			case 26: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-84-tube-town-49052`); break;
+			case 27: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-83-petey-dat-boi-part-detwo-48809`); break;
+			case 28: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-82-im-just-one-man-48448`); break;
+			case 29: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-81-marquis-of-queensbury-48099`); break;
+			case 30: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-80-weight-of-the-world-47774`); break;
+			case 31: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-79-bumbaclot-47448`); break;
+			case 32: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-78-we-couldnt-get-ian-46727`); break;
+			case 33: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-77-god-damn-i-swear-i-uploaded-this-46389`); break;
+			case 34: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-76-how-do-you-spell-halowen-45949`); break;
+			case 35: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-75-the-voice-of-the-left-45120`); break;
+			case 36: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-74-happy-halloween-44796`); break;
+			case 37: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-73-late-night-boys-44426`); break;
+			case 38: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-72-cum-petty-and-the-shartbre-gay-kers-haha-44013`); break;
+			case 39: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-71-bean-reviews-43649`); break;
+			case 40: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-70-i-ate-bad-fish-43360`); break;
+			case 41: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-69-valero-boss-42924`); break;
+			case 42: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-68-tech-savior-42459`); break;
+			case 43: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-67-los-secundos-episada-de-hake-florjes-42130`); break;
+			case 44: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-66-oopsadoozio-41660`); break;
+			case 45: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-65-construction-boys-41326`); break;
+			case 46: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-64-tier-one-40476`); break;
+			case 47: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-63-scaramucci-news-episode-40016`); break;
+			case 48: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-62-train-knowledge-39646`); break;
+			case 49: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-61-business-places-39288`); break;
+			case 50: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-60-the-letter-boys-38791`); break;
+			case 51: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-59-marmaduke-38480`); break;
+			case 52: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-58-a-very-adam-christmas-38082`); break;
+			case 53: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-57-my-wonder-woman-review-37718`); break;
+			case 54: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-56-the-resistance-37436`); break;
+			case 55: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-55-disclaimers-37102`); break;
+			case 56: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-54-new-characters-36812`); break;
+			case 57: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-52-lisas-feet-36251`); break;
+			case 58: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-51-i-want-to-go-home-35965`); break;
+			case 59: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-50-diversity-town-35669`); break;
+			case 60: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-49-the-hidden-episode-35392`); break;
+			case 61: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-48-the-greatest-riff-of-all-time-35097`); break;
+			case 62: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-47-foody-for-thought-lol-34434`); break;
+			case 63: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-46-vacations-34109`); break;
+			case 64: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-45-the-replacements-33795`); break;
+			case 65: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-44-i-dunno-some-shit-title-i-guess-33527`); break;
+			case 66: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-43-the-real-original-cum-boys-33223`); break;
+			case 67: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-42-will-smith-menaker-32908`); break;
+			case 68: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-41-cum-town-live-32607`); break;
+			case 69: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-40-valentimes-32263`); break;
+			case 70: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-39-petey-dat-boi-31957`); break;
+			case 71: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-38-good-prison-vs-bad-prison-31609`); break;
+			case 72: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-37-goldust-wasnt-gay-30421`); break;
+			case 73: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-36-goatee-era-seagal-30166`); break;
+			case 74: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-35-cum-town-fires-back-28300`); break;
+			case 75: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-34-we-gotta-get-rid-of-the-tv-28019`); break;
+			case 76: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-33-ugh-wardell-27594`); break;
+			case 77: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-32-crisis-averted-27433`); break;
+			case 78: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-31-the-birthday-bitch-27131`); break;
+			case 79: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-30-copycats-26895`); break;
+			case 80: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-29-customer-service-26661`); break;
+			case 81: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-28-how-many-yall-like-sex-26511`); break;
+			case 82: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-27-adams-last-stand-26208`); break;
+			case 83: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-26-congratulations-president-hillary-25974`); break;
+			case 84: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-25-playing-pretend-25731`); break;
+			case 85: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-24-ghost-stories-25473`); break;
+			case 86: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-23-my-new-drug-problem-25269`); break;
+			case 87: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-22-ians-shitty-impressions-24935`); break;
+			case 88: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-21-hot-fresh-debate-instant-reaction-24636`); break;
+			case 89: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-20-sd-tard-24298`); break;
+			case 90: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-19-rape-science-24028`); break;
+			case 91: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-18-je-suis-charlie-23759`); break;
+			case 92: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-17-old-friends-23519`); break;
+			case 93: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-16-back-in-business-23264`); break;
+			case 94: receivedMessage.channel.send(`${stav}Warning DO NOT LISTEN TO THIS GAY EPISODE. http://shoutengine.com/CumTown/ep-15-another-girl-episode-22669`); break;
+			case 95: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-14-cum-town-after-dark-22461`); break;
+			case 96: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-13-just-for-laughs-recap-22231`); break;
+			case 97: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-12-overconfidence-21996`); break;
+			case 98: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-11-david-cross-21711`); break;
+			case 99: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-10-killing-garfield-21579`); break;
+			case 100: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-9-technical-difficulties-21303`); break;
+			case 101: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-8-the-eighth-episode-21053`); break;
+			case 102: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-7-autism-powers-20789`); break;
+			case 103: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-6-not-soon-enough-20535`); break;
+			case 104: receivedMessage.channel.send(`${stav}http://shoutengine.com/CumTown/ep-5-cum-angels-20310`); break;
+			case 105: receivedMessage.channel.send(`${stav} http://shoutengine.com/CumTown/ep-4-beef-squashers-20002`); break;
+			case 106: receivedMessage.channel.send(`${stav} http://shoutengine.com/CumTown/ep-3-the-sleepy-boys-19765`); break;
+			case 107: receivedMessage.channel.send(`${stav} http://shoutengine.com/CumTown/ep-2-real-hip-hop-19557`); break;
+			case 108: receivedMessage.channel.send(`${stav} http://shoutengine.com/CumTown/ep-1-the-original-cum-boys-19282`); break;
+			case 109: receivedMessage.channel.send(`${stav}1 http://www.mediafire.com/file/v09d2tohgk117l9/2016-09-14_Cocaine_Cowboys_%2528Bonus_1%2529.mp3/file`); break;
+			case 110: receivedMessage.channel.send(`${stav} 2 http://www.mediafire.com/file/615o4u7gozurcgy/2016-09-15_The_C%2Am_Boys_Or_Is_It.mp3/file`); break;
+			case 111: receivedMessage.channel.send(`${stav}3 http://www.mediafire.com/file/o7z5w7cai7oxu5z/2016-09-22_Chelsea_Bombing_Hot_Takes_%2528Bonus_2%2529.mp3/file `); break;
+			case 112: receivedMessage.channel.send(`${stav}4 - http://www.mediafire.com/file/r7hwwsxw5j4q4s8/2016-09-29_Debate_Preview_Spectacular.mp3/file`); break;
+			case 113: receivedMessage.channel.send(`${stav}5 - http://www.mediafire.com/file/tb1a6dm0od0y26b/2016-10-17_Bully_Town.mp3/file`); break;
+			case 114: receivedMessage.channel.send(`${stav}6 - http://www.mediafire.com/file/8f14bp5n0hzfn5o/2016-10-23_Stav_Ate_Too_Many_Brownies.mp3/file`); break;
+			case 115: receivedMessage.channel.send(`${stav}7 - http://www.mediafire.com/file/twonuwyt207mu17/2016-10-24_Funny_Moms.mp3/file`); break;
+			case 116: receivedMessage.channel.send(`${stav}8 - http://www.mediafire.com/file/np3k8x3txbo4m4n/2016-10-30_Bring_Back_Vine.mp3/file`); break;
+			case 117: receivedMessage.channel.send(`${stav}9 - http://www.mediafire.com/file/dnp9yoqsgu3tbn4/2016-10-8_Peanut_M%2526Ms.mp3/file`); break;
+			case 118: receivedMessage.channel.send(`${stav}10 The RSS Episode - https://s3-us-west-1.amazonaws.com/patreon-posts/6880973816401209396.mp3`); break;
+			case 119: receivedMessage.channel.send(`${stav}11 The Hill Boys - https://s3-us-west-1.amazonaws.com/patreon-posts/16982654001782804827.mp3`); break;
+			case 120: receivedMessage.channel.send(`${stav}12 Pizza Gate - https://s3-us-west-1.amazonaws.com/patreon-posts/16986811360002917893.mp3`); break;
+			case 121: receivedMessage.channel.send(`${stav}13 Stav's Fat ft. Kurt Metzger - https://s3-us-west-1.amazonaws.com/patreon-posts/11999698458686828826.mp3`); break;
+			case 122: receivedMessage.channel.send(`${stav}14 Adam's Replacement - https://s3-us-west-1.amazonaws.com/patreon-posts/13794051842720246239.mp3`); break;
+			case 123: receivedMessage.channel.send(`${stav}Cocaine Cowboys 2 https://s3-us-west-1.amazonaws.com/patreon-posts/14200500967079792711.mp3`); break;
+			case 124: receivedMessage.channel.send(`${stav}Huge Guest Announcement https://s3-us-west-1.amazonaws.com/patreon-posts/18051064194784368324.mp3`); break;
+			case 125: receivedMessage.channel.send(`${stav}Christmas Spectacular w/ Felix https://s3-us-west-1.amazonaws.com/patreon-posts/11983643291007919024.mp3`); break;
+			case 126: receivedMessage.channel.send(`${stav}Happy New Years https://s3-us-west-1.amazonaws.com/patreon-posts/10852152782134406016.mp3`); break;
+			case 127: receivedMessage.channel.send(`${stav}Bonus Bonus https://s3-us-west-1.amazonaws.com/patreon-posts/5107140770957531359.mp3`); break;
+			case 128: receivedMessage.channel.send(`${stav}New Year New Me https://s3-us-west-1.amazonaws.com/patreon-posts/6662197148277275679.mp3`); break;
+			case 129: receivedMessage.channel.send(`${stav}Better Late Than Funny - https://s3-us-west-1.amazonaws.com/patreon-posts/601784875752769795.mp3`); break;
+			case 130: receivedMessage.channel.send(`${stav}Black Magic Schoolbus - https://s3-us-west-1.amazonaws.com/patreon-posts/654385951944066197.mp3`); break;
+			case 131: receivedMessage.channel.send(`${stav}Cure For Death - https://s3-us-west-1.amazonaws.com/patreon-posts/10523019505347979312.mp3`); break;
+			case 132: receivedMessage.channel.send(`${stav}Congratulations To John Elway And The Denver Broncos! - https://s3-us-west-1.amazonaws.com/patreon-posts/2390586031314628030.mp3`); break;
+			case 133: receivedMessage.channel.send(`${stav}10 Thousand Dollar Episode Spectacular - https://s3-us-west-1.amazonaws.com/patreon-posts/11757845852676432697.mp3`); break;
+			case 134: receivedMessage.channel.send(`${stav}Lessons Learned - https://s3-us-west-1.amazonaws.com/patreon-posts/1399789747514921807.mp3`); break;
+			case 135: receivedMessage.channel.send(`${stav}Spring Training - https://s3-us-west-1.amazonaws.com/patreon-posts/4043778171471032746.mp3`); break;
+			case 136: receivedMessage.channel.send(`${stav}History Boys - https://s3-us-west-1.amazonaws.com/patreon-posts/8037663123340409884.mp3`); break;
+			case 137: receivedMessage.channel.send(`${stav}Swole Mates - https://s3-us-west-1.amazonaws.com/patreon-posts/11371505276231225199.mp3`); break;
+			case 138: receivedMessage.channel.send(`${stav}Rob Haze - https://s3-us-west-1.amazonaws.com/patreon-posts/6264606376624432458.mp3`); break;
+			case 139: receivedMessage.channel.send(`${stav}The Reunion Show - https://s3-us-west-1.amazonaws.com/patreon-posts/2022126645304218784.mp3`); break;
+			case 140: receivedMessage.channel.send(`${stav}Race Cum - https://s3-us-west-1.amazonaws.com/patreon-posts/11444442492219550587.mp3`); break;
+			case 141: receivedMessage.channel.send(`${stav}The Last Shitty Episode - https://s3-us-west-1.amazonaws.com/patreon-posts/4993314834024439938.mp3`); break;
+			case 142: receivedMessage.channel.send(`${stav}NYC Boys - https://s3-us-west-1.amazonaws.com/patreon-posts/4993111058134535807.mp3`); break;
+			case 143: receivedMessage.channel.send(`${stav}The Train Episode - https://s3-us-west-1.amazonaws.com/patreon-posts/6894873283631133950.mp3`); break;
+			case 144: receivedMessage.channel.send(`${stav}Running Out of Episodes - https://s3-us-west-1.amazonaws.com/patreon-posts/7568825876874703151.mp3`); break;
+			case 145: receivedMessage.channel.send(`${stav}Wop Dago Guinnea -  https://s3-us-west-1.amazonaws.com/patreon-posts/6695743633792245276.mp3`); break;
+			case 146: receivedMessage.channel.send(`${stav}I Dunno -  https://s3-us-west-1.amazonaws.com/patreon-posts/10599585733512945093.mp3`); break;
+			case 147: receivedMessage.channel.send(`${stav}Adam's Whore Addiction -  https://s3-us-west-1.amazonaws.com/patreon-posts/2085699931654960519.mp3`); break;
+			case 148: receivedMessage.channel.send(`${stav}Springtime for Crypotfascists -  https://s3-us-west-1.amazonaws.com/patreon-posts/6062371394205177857.mp3`); break;
+			case 149: receivedMessage.channel.send(`${stav}Real Time -  https://s3-us-west-1.amazonaws.com/patreon-posts/9653347824301587810.mp3`); break;
+			case 150: receivedMessage.channel.send(`${stav}Stav's Toys -  https://s3-us-west-1.amazonaws.com/patreon-posts/13322505883032500904.mp3`); break;
+			case 151: receivedMessage.channel.send(`${stav}tHere was an amber alert -  https://s3-us-west-1.amazonaws.com/patreon-posts/604902114758822250.mp3`); break;
+			case 152: receivedMessage.channel.send(`${stav}Cum Town Live (At Skankfest) -  https://s3-us-west-1.amazonaws.com/patreon-posts/6294237648964282950.mp3`); break;
+			case 153: receivedMessage.channel.send(`${stav}Stav's Best Episode -  https://s3-us-west-1.amazonaws.com/patreon-posts/5876861826047907785.mp3`); break;
+			case 154: receivedMessage.channel.send(`${stav}(Kissing Fingertips) -  https://s3-us-west-1.amazonaws.com/patreon-posts/8130880716787840369.mp3`); break;
+			case 155: receivedMessage.channel.send(`${stav}The Real Ass Podcast -  https://s3-us-west-1.amazonaws.com/patreon-posts/HKPHXEuTGduJtVmRYx98i6LO_WV_O7zqT2DHpuYstHbf_xokYFw8SL7Gjj6mGzi7.mp3`); break;
+			case 156: receivedMessage.channel.send(`${stav}Wounded Warrior -  https://s3-us-west-1.amazonaws.com/patreon-posts/Xkhnlw7a1nF_sbPzaNJcj1PdD9Q14XCYD9az5k-LqLRex47SFSKdChY9PXaFEKgI.mp3`); break;
+			case 157: receivedMessage.channel.send(`${stav}Adam's Favorite Shows -  https://s3-us-west-1.amazonaws.com/patreon-posts/05QdRuJM0j8QqRygzIklbxn6zAxYYtH9QOIwuw1LLZl_3b1_x6yrwgBqKaMTfelg.mp3`); break;
+			case 158: receivedMessage.channel.send(`${stav}Just Go Ahead And Unsubscribe For The Month -  https://s3-us-west-1.amazonaws.com/patreon-posts/aQt36Tt1LSmmAMn9RjMg4-S4o9Qvhp2xdy3XaI2xxhuOGbnBUCERAJfFoJ0ZkJN5.mp3`); break;
+			case 159: receivedMessage.channel.send(`${stav}i dunno some fuckin shit or somethin -  https://s3-us-west-1.amazonaws.com/patreon-posts/wK3CrUDhSZR-AoIe_S32rpfAsPyvzwQ8Be0e6bj8W51rlzSxxJhLPYovpI8eZHJr.mp3`); break;
+			case 160: receivedMessage.channel.send(`${stav}adam's meal plan -  https://s3-us-west-1.amazonaws.com/patreon-posts/Q_hftO1Fi98TMNigHLWtadY9nvuw6vQyHHUMlgJlFXo5-5BgApsOC3o4tA8ZCMGr.mp3`); break;
+			case 161: receivedMessage.channel.send(`${stav}Replaciadios -  https://s3-us-west-1.amazonaws.com/patreon-posts/T6LzFuV31bWLV99fDsVp2BCutYW9KiBBOLvU0ZIFkEv2r2q9FQTQDDySdEyKosyu.mp3`); break;
+			case 162: receivedMessage.channel.send(`${stav}Jake drinks a surge -  https://s3-us-west-1.amazonaws.com/patreon-posts/pvLZTICbl3XkI0MZ_hXe4_-vsyMlql6rA8VcFVMB82byvHos4fV7Q8xdL25wSKnV.m4a`); break;
+			case 163: receivedMessage.channel.send(`${stav}Stav's Changing His Name -  https://s3-us-west-1.amazonaws.com/patreon-posts/zXB6jUqaruldnEMPUsd2BjXeV9hVMqawMYGBXWT0fMdLuj3EWHzeGN71ty1GNGM7.mp3`); break;
+			case 164: receivedMessage.channel.send(`${stav}it was the iphone thing -  https://s3-us-west-1.amazonaws.com/patreon-posts/4-HVi43bakUubYZ9Y7rJP5yfJDilrsFc2BoPzD0K0ZyKc8LyUlYFgDZ_y5OQlGoz.mp3`); break;
+			case 165: receivedMessage.channel.send(`${stav}Once Upon A Time In Brooklyn -  https://s3-us-west-1.amazonaws.com/patreon-posts/yX7D1TDqWKj0B_8Z3n0akU_K73mj_4R7XdSNq_lf2vKeGLyfoQqqt0VoUxc1V8zP.mp3`); break;
+			case 166: receivedMessage.channel.send(`${stav}trying a new thing where i dont charge the batteries for the recorder -  https://s3-us-west-1.amazonaws.com/patreon-posts/5CyqbSVIhp3BpttDZ52WUnoaYYVvkyiXDe4yq5PloCm29kPEpxwBTvJX_tgjzacB.mp3`); break;
+			case 167: receivedMessage.channel.send(`${stav}Apologies -  https://s3-us-west-1.amazonaws.com/patreon-posts/VvfzpnCPzo0sw16QyHhVGEqG-XVFpBAWNCjdX66-rgWvn1txwmxqXWOs9uVTL4wo.mp3`); break;
+			case 168: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/0hbtodaf4r6dopv/2018-04-22_The_Banana_Boat_%2528Bonus_78%2529.mp3/file`); break;
+			case 169: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/6595576wpg3s3lh/2018-04-29_This_Is_The_Bonus_%2528Bonus_79%2529.mp3/file`); break;
+			case 170: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/2yu7b27k1sislil/2018-04-29_This_is_not_the_bonus_%2528Bonus_80%2529.mp3/file`); break;
+			case 171: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/sr99pc12a5trp7y/2018-05-06_Mad_About_You_%2528Bonus_81%2529.mp3/file`); break;
+			case 172: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/0v55yazs723dljq/2018-05-13_Swolepressions_with_Evan_%2528Bonus_82%2529.mp3/file`); break;
+			case 173: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/yyjn86m2swcxe9v/2018-05-21_Trains_cant_stop_me_%2528Bonus_83%2529.mp3/file`); break;
+			case 174: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/ezqqaxusnvks4hm/2018-05-27_the_praxis_of_not_f%2Ack%2Ang_%2528Bonus_84%2529.mp3/file`); break;
+			case 175: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/8j9qqldwd1ulgrd/2018-06-03_should_i_do_twitch_%2528Bonus_85%2529.mp3/file`); break;
+			case 176: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/dt3xq7m3776y9ff/2018-06-10_its_a_soduku_this_time_%2528Bonus_86%2529.mp3/file`); break;
+			case 177: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/u80rk362u2m1grb/2018-06-17_we%2527re_trying_a_new_thing_now_%2528Bonus_87%2529.mp3/file`); break;
+			case 178: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/27kr46bg71dgin8/2018-06-24_Ethics_%2528Bonus_88%2529.mp3/file`); break;
+			case 179: receivedMessage.channel.send(`${stav}http://www.mediafire.com/file/lns47r2zawtud3m/2018-06-30_Guyerside_Chats_%2528Bonus_89%2529.mp3/file`); break;
+			case 180: receivedMessage.channel.send(`${stav}Here's To Who's Left -  https://s3-us-west-1.amazonaws.com/patreon-posts/4Ggi4L7hprYuJ7pVC32ALp4SZmRXupVMtkbRg55YVm_RhYBmHGfLVeSk4Dy5uuT0.mp3`); break;
+			case 181: receivedMessage.channel.send(`${stav}The Gerby Gomo Super Episode -  https://s3-us-west-1.amazonaws.com/patreon-posts/EHdHvKGqbcPN8bSj2g3OnakbBEP5nrC3J1jDBNjlC-Rr1xCMMKoNCfMadkHxwR3x.mp3`); break;
+			case 182: receivedMessage.channel.send(`${stav}The REAL pizzagate -  https://s3-us-west-1.amazonaws.com/patreon-posts/qNrRyxRsaPZmhvmFahGS-haGBytPf_zEA4G61hJ31yF97oBy0pgrlZSNfA7WVAom.mp3`); break;
+			case 183: receivedMessage.channel.send(`${stav}digging deepah -  https://s3-us-west-1.amazonaws.com/patreon-posts/rW9VH2_uCOvvRcAO5UjOn4_euQgdObWVI6ESStcodcJ1u7i3xFJGae4IEAgyG33S.mp3`); break;
+			case 184: receivedMessage.channel.send(`${stav}Dillon's Cheese Pizza Steakhouse -  https://s3-us-west-1.amazonaws.com/patreon-posts/iW1oZBo-wtrrYtz3Yn5l-__oa_63feU0ZKmSxOI6LFWQL2E767Dn09f15NQiW3e3.mp3`); break;
+			case 185: receivedMessage.channel.send(`${stav}ive calmed down -  https://s3-us-west-1.amazonaws.com/patreon-posts/kd928Q7eWw0FGcJCiCyQ4lXYhENYUM912dWyrox4-eEMN3l60-F1eoZwCkQRQZ11.mp3`); break;
+			case 186: receivedMessage.channel.send(`${stav}Spot boy -  https://s3-us-west-1.amazonaws.com/patreon-posts/zZfZHGyKukBtDEsyJenuUkvJttR9cSQctZ2c-b7oSMNz7oCEQLhjo9y2XZYohwIw.mp3`); break;
+			case 187: receivedMessage.channel.send(`${stav}Tango Down -  https://s3-us-west-1.amazonaws.com/patreon-posts/wHIrf7H_ncjtuuGcPsBBIfSpZQQC7WxuNkmz83k8fCNkeatD3rau9NTSQJs3uZ3E.mp3`); break;
+			case 188: receivedMessage.channel.send(`${stav}Best kinda buffet -  https://s3-us-west-1.amazonaws.com/patreon-posts/5MCJYFmJ66cd1dFpUQ94fOfAhFv-apr5Y8l1e83sZd4gpwj3C9Onj-2KrM89AZpr.mp3`); break;
+			case 189: receivedMessage.channel.send(`${stav}Surprise bitch -  https://s3-us-west-1.amazonaws.com/patreon-posts/-y7QjHWGjGlh0Hbv1rto7yCbTa7jRm_fWY_ZBq_b_t5VcloJl0J776WuxO4o-YHP.mp3`); break;
+			case 190: receivedMessage.channel.send(`${stav}Two Girls Up One Girl Down - https://s3-us-west-1.amazonaws.com/patreon-posts/gkwyb4K_06M9ZBZMfdlq2jKjipy0epUpS0-wBnyuGZpBHNzhy0ahGijiGwuS5oQ1.mp3`); break;
+			case 191: receivedMessage.channel.send(`${stav}Ian's secrets - https://s3-us-west-1.amazonaws.com/patreon-posts/bFox8WEtoIwZRan7_rzjrZuldVkV1raCOlgNv-ygQeHvtuJ6uBB-vOcrVwZr2-zy.mp3`); break;
+			case 192: receivedMessage.channel.send(`${stav}A failed experiment -  https://s3-us-west-1.amazonaws.com/patreon-posts/S7-3UiaV_TUcjqygSR1BB74CD2OmyGSEIgoPdw8eQ9o7f4IoMArA4f0-OzuaW6S3.mp3`); break;
+			case 193: receivedMessage.channel.send(`${stav}Hello Newman -  https://s3-us-west-1.amazonaws.com/patreon-posts/87KAneNyBW6hO0tddISQIKM0cfuCtA4mMi1nOFY9NoEOs77qB_GrtLiJ8xM_l5My.mp3`); break;
+			case 194: receivedMessage.channel.send(`${stav}Super Bowl Hit Transplant -  https://s3-us-west-1.amazonaws.com/patreon-posts/JOBHHCdLC9pQqoM_VZerWc1axvQf6OUcdHPLRSKePpSCx3gOTt9f3MdWco7oCTcA.mp3`); break;
+			case 195: receivedMessage.channel.send(`${stav}Fuck this new setup -  https://s3-us-west-1.amazonaws.com/patreon-posts/KygHmZEbnzW6PL_3wwOLiGf-vSpZGUJO2yhKM1i3DJxMJ3UguTlCPUW_8B7zcMqL.mp3`); break;
+			case 196: receivedMessage.channel.send(`${stav}Classic Premium -  https://s3-us-west-1.amazonaws.com/patreon-posts/HYReEIl7Zi2tpjWMoQSumdq3ZW1uxv2Q9Erp2wB0Og9ekzpdRbXBPDTk3QntXj8G.mp3`); break;
+			case 197: receivedMessage.channel.send(`${stav}No more input from the audio nerds -  https://s3-us-west-1.amazonaws.com/patreon-posts/m6ZNXBMThyfmCNR1_532VtBIDIqKOm2RJByCfnKi_f9ZDRwSWJ_Xbczj5VsDTWia.mp3`); break;
+			case 198: receivedMessage.channel.send(`${stav}Year of the dragon -  https://s3-us-west-1.amazonaws.com/patreon-posts/1UjogEcLqNqXu3wd55aEv1uT7r9ko9dkwtzTKB-KkLIQXAX6Tc89qwceWpq2w474.mp3`); break;
+	}
+}
+
+function fiveAMCommand(receivedMessage) {
+	const extremelyonline = client.emojis.find(emoji => emoji.name === "extremelyonline");
+	var cron = require('node-schedule');
+	cron.scheduleJob({hour: 4, minute: 00, dayOfWeek: [0,1,2,3,4,5,6]}, function(){
+	client.channels.get('502700576145014796').send(`${extremelyonline} more like 5am`);
+});
+}
+
+function stavCommand(receivedMessage) {
+	const sassystav = client.emojis.find(emoji => emoji.name === "sassystav");
+	var pick = Math.floor((Math.random() * 31) + 1);
+	switch (pick){
+		case 1: receivedMessage.channel.send(`${sassystav} WOO!`); break;
+		case 2: receivedMessage.channel.send(`${sassystav} woo`); break;
+		case 3: receivedMessage.channel.send(`${sassystav} absolutely`); break;
+		case 4: receivedMessage.channel.send(`${sassystav} hell yea dude!`); break;
+		case 5: receivedMessage.channel.send(`${sassystav} interesting`); break;
+		case 6: receivedMessage.channel.send(`${sassystav} nice dude`); break;
+		case 7: receivedMessage.channel.send(`${sassystav} noooooo fuck no`); break;
+		case 8: receivedMessage.channel.send(`${sassystav} right`); break;
+		case 9: receivedMessage.channel.send(`${sassystav} fuck dude`); break;
+		case 10: receivedMessage.channel.send(`${sassystav} yes`); break;
+		case 11: receivedMessage.channel.send(`${sassystav} i suck`); break;
+		case 12: receivedMessage.channel.send(`${sassystav} me too`); break;
+		case 13: receivedMessage.channel.send(`${sassystav} yea yea yea`); break;
+		case 14: receivedMessage.channel.send(`${sassystav} dude hell yea`); break;
+		case 15: receivedMessage.channel.send(`${sassystav} oh yea dude`); break;
+		case 16: receivedMessage.channel.send(`${sassystav} oh yea`); break;
+		case 17: receivedMessage.channel.send(`${sassystav} yes dude`); break;
+		case 18: receivedMessage.channel.send(`${sassystav} damn`); break;
+		case 19: receivedMessage.channel.send(`${sassystav} a cupcake and a candy bar`); break;
+		case 20: receivedMessage.channel.send(`${sassystav} fried spam`); break;
+		case 21: receivedMessage.channel.send(`${sassystav} lentils and fucking soup and shit`); break;
+		case 22: receivedMessage.channel.send(`${sassystav} peanut oil`); break;
+		case 23: receivedMessage.channel.send(`${sassystav} faaaaava beans`); break;
+		case 24: receivedMessage.channel.send(`${sassystav} 40 jimmy dean...sandwichburger-er breakfast sandwiches`); break;
+		case 25: receivedMessage.channel.send(`${sassystav} ugh`); break;
+		case 26: receivedMessage.channel.send(`${sassystav} HAH HAHAHAHA`); break;
+		case 27: receivedMessage.channel.send(`${sassystav} AHAHAHAHAHAHAHA HA ha ha oh shit we're not going to top that`); break;
+		case 28: receivedMessage.channel.send(`${sassystav} shits boring who cares`); break;
+		case 29: receivedMessage.channel.send(`${sassystav} i suck`); break;
+		case 30: receivedMessage.channel.send(`${sassystav} fucking rules`); break;
+		case 31: receivedMessage.channel.send(`${sassystav} i fucking...i want uhuh im gay hahahaha`); break;
+}
+}
+
+function molestriosCommand(receivedMessage) {
+	const molest = client.emojis.find(emoji => emoji.name === "molest");
+	var pick = Math.floor((Math.random() * 18) + 1);
+	switch (pick){
+		case 1: receivedMessage.channel.send(`${molest} Shut up beech mam`); break;
+		case 2: receivedMessage.channel.send(`${molest} Fuck you bitch mom`); break;
+		case 3: receivedMessage.channel.send(`${molest} Fuck you beech mom go make me lunchy time`); break;
+		case 4: receivedMessage.channel.send(`${molest} Shut the fuck up mam`); break;
+		case 5: receivedMessage.channel.send(`${molest} Beech`); break;
+		case 6: receivedMessage.channel.send(`${molest} Gio is gay you cant change it`); break;
+		case 7: receivedMessage.channel.send(`${molest} Shut up you gay faggot`); break;
+		case 8: receivedMessage.channel.send(`${molest} Shut up dont tell`); break;
+		case 9: receivedMessage.channel.send(`${molest} Do not fuck tell me how to play playstation`); break;
+		case 10: receivedMessage.channel.send(`${molest} Sucking me my nuts you fucking whore`); break;
+		case 11: receivedMessage.channel.send(`${molest} You are a faggot`); break;
+		case 12: receivedMessage.channel.send(`${molest} I will playstation the way i like beech`); break;
+		case 13: receivedMessage.channel.send(`${molest} I am beating off to pussy mom get out you fucking beech`); break;
+		case 14: receivedMessage.channel.send(`${molest} I learn how to jack off you fucking beech`); break;
+		case 15: receivedMessage.channel.send(`${molest} I do not want to see your ugly pussy`); break;
+		case 16: receivedMessage.channel.send(`${molest} Get out i am jacking off`); break;
+		case 17: receivedMessage.channel.send(`${molest} I learn to beat off from sundar at school`); break;
+		case 18: receivedMessage.channel.send(`${molest} No Gio you are faggot you cannot say`); break;
+}
+}
+		
+function rssCommand(receivedMessage) {
+	const Discord = require('discord.js')
+	const DiscordRSS = require('discord.rss')
+	const client = new Discord.Client()
+	const drss = new DiscordRSS.Client()
+	drss.login(client) // Can be done before or after the client is 'ready'
+	//client.login('token')
+}
+
+
+client.login("NTc0MzkxNTA3Mjk4MDI1NDgy.XN8dtA.aH8kAJR1gqVlQT7iOKdPJeye3r4") // Replace XXXXX with your bot token
